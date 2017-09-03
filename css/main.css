@@ -1,3 +1,90 @@
 @charset "utf-8";
 /* CSS Document */
 
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	text-decoration: none;
+	border: none;
+	font-family: 'Quicksand', sans-serif;
+}
+
+/*--=========
+
+typography
+
+=========--*/
+.wrapper {
+	width: 1230px;
+	margin: 0 auto;
+}
+/*--=========
+
+button
+
+=========--*/
+.btn {
+	padding: 10px 40px;
+	text-align: center;
+	background-color: #FFCE7C;
+	border-radius: 30px;
+	margin-top: 10px;
+	text-transform: uppercase;
+	color: #fff;
+	text-decoration: none;
+}
+.btn:hover {
+	background-color: #379983;
+}
+/*--=========
+
+nav
+
+=========--*/
+ul {
+	list-style: none;
+}
+ul span {
+	display: none;
+}
+ul a, ul li {
+	display: inline-block;
+}
+ul a {
+	width: 25px;
+	height: 25px;
+}
+ul li:first-child a, ul li:last-child a {
+	background: url(../img/icon-fb.png)no-repeat 0 0;
+}
+ul li:nth-child(2) a, ul li:last-child a {
+	background: url(../img/icon-tumblr.png)0 0;
+}
+ul li:nth-child(3) a, ul li:last-child a {
+	background: url(../img/icon-pinterest.png)0 0;
+}
+ul li:nth-child(4) a, ul li:last-child a {
+	background: url(../img/icon-linkedin.png)0;
+}
+ul li:last-child a, ul li:last-child a {
+	background: url(../img/icon-blog.png)no-repeat 0 0;
+}
+ul li a:hover {
+	background-position: 0 -25px;
+}
+/*--=========
+
+images
+
+=========--*/
+#hero {
+	background: url(../img/img-hero.gif) no-repeat;
+	height: 507px;
+}
+
+.lghtblu {
+	background-color: #B6ECE0;
+}
