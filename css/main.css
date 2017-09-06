@@ -88,3 +88,11 @@ images
 .lghtblu {
 	background-color: #B6ECE0;
 }
+/*--=========
+
+structure
+
+=========--*/
+.row {
+	overflow: auto;
+}
