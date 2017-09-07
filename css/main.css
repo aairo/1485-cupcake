@@ -7,19 +7,81 @@
 	-o-box-sizing: border-box;
 	-ms-box-sizing: border-box;
 	box-sizing: border-box;
-	text-decoration: none;
 	border: none;
-	font-family: 'Quicksand', sans-serif;
+	font: 14px/26px 'Quicksand', sans-serif;
 }
 
 /*--=========
 
-typography
+Site structure
 
 =========--*/
+.fl {
+	float:left;
+}
+.fr {
+	float: right;
+}
 .wrapper {
 	width: 1230px;
 	margin: 0 auto;
+	padding: 75px;
+}
+.p1 {
+	width: 570px
+}
+.h1 {
+	width: 235px;
+}
+#specialty {
+	padding: 100px;
+	height: 560px;
+}
+#daily {
+	padding: 100px;
+	height: 740px;
+}
+.treats {
+	width: 225px; 
+}
+#treats div:nth-child(2){
+	padding-left: 0px; /* breaks the "allergen free" one and wont scoot beyond a certain point?*/
+}
+.flavors {
+	width: 230px;
+	margin-left: 25px;
+}
+#nav {width: 650px}
+/*--=========
+
+type
+
+=========--*/
+#treats, #daily {
+	text-align: center;
+}
+h2 {
+	font: 600 34px/46px 'Quicksand', sansserif;
+	color: #E05067;
+}
+h3 {
+	font-weight: 600;
+	color: #E05067;
+}
+/*--=========
+
+Navigation
+
+=========--*/
+nav ul li{
+	display: inline-block;
+}
+#id ul li:nth-child(odd){
+	list-style-image: url(../img/cherry-bullet.png);
+}
+.foot {
+	width: 200px; 
+	margin-left: 50px;
 }
 /*--=========
 
@@ -57,6 +119,13 @@ ul a {
 	width: 25px;
 	height: 25px;
 }
+h1 {
+	margin-left: 80px;
+	margin-top: -10px;
+}
+ul li {
+	margin-left: 10px;
+}
 ul li:first-child a, ul li:last-child a {
 	background: url(../img/icon-fb.png)no-repeat 0 0;
 }
@@ -75,6 +144,9 @@ ul li:last-child a, ul li:last-child a {
 ul li a:hover {
 	background-position: 0 -25px;
 }
+#mar1 {
+	margin-left: 200px;
+}
 /*--=========
 
 images
@@ -88,6 +160,71 @@ images
 .lghtblu {
 	background-color: #B6ECE0;
 }
+#c1 {
+	margin-right: 20px;
+	margin-top: 100px;
+}
+/*--=========
+
+Table
+
+=========--*/
+thead, tr:nth-child(2) {
+	background-color: #379983;
+}
+tr:last-child {
+	background-color: #379983;
+}
+tbody td, tfoot td {
+	padding: 20px 60px;
+}
+table {
+	margin: 0px 0px 60px 250px;
+	text-align: center;
+}
+th {
+	padding: 20px 40px;
+}
+table {
+    border-collapse: collapse;
+	color: #fff;
+	font-weight: 600;
+}
+form {
+	margin: 0 auto;
+	display: block;
+	width: 970px;
+}
+.form {
+	width: 470px;
+}
+form {
+	margin: 0 auto;
+	display: block;
+}
+fieldset, label {
+	font: 20px;
+	color: #702F1D;
+	text-transform: uppercase;
+}
+#firstname, #lastname, #phonenumber, #email, textarea {
+	display: block;
+	text-align: left;
+	height: 44px;
+	margin: 10px 0px 5px 0px;
+	background-color: #379983;
+	padding: 22px 40px;
+	-moz-border-radius: 20px;
+	-o-border-radius: 20px;
+	-ms-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
+	width: 470px;
+}
+textarea {
+	height: 180px;
+	width: 470px;
+}
 /*--=========
 
 structure
@@ -96,3 +233,4 @@ structure
 .row {
 	overflow: auto;
 }
+

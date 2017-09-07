@@ -16,9 +16,9 @@ head
 
 ==========--> 
 <!--remove-->
-<div class="wrapper">
+<div class="wrapper row" id="nav">
   <header>
-    <div><!--add header and h1-->
+    <div class="fl"><!--add header and h1-->
       <nav><!-- -->
         <ul>
           <li>home</li>
@@ -26,8 +26,8 @@ head
         </ul>
       </nav>
     </div>
-    <h1><img src="img/logo-main.png" alt="real authentic fake"></h1>
-    <div>
+   <div class="fl"><h1><img src="img/logo-main.png" alt="real authentic fake"></h1></div>
+    <div class="fr">
       <nav>
         <ul>
           <li>products</li>
@@ -46,7 +46,7 @@ hero
   <section> <!--remove section-->
     <div id="hero" class="wrapper">
       <header>
-        <h2>try our signature cupcake</h2>
+        <h2 id="tryour">try our signature cupcake</h2>
       </header>
     </div>
   </section>
@@ -57,23 +57,24 @@ content 1
 
 ==========-->
 <section>
-  <div class="wrapper">
+  <div class="wrapper" id="specialty">
     <header>
       <h2>specialty bakery dedicated to creating and baking several different sweet treats.</h2>
+      <img src="img/cupcake-2.png" alt=" " class="fl" id="c1">
     </header>
-    <div>
+    <div class="fl">
       <h3>about us</h3>
       <!--make a section-->
-      <p>We offer cupcakes in three sizes: Jumbo Gourmet (filled), Regular &amp; Mini. Plus, we make Cakes, Cake Balls/Pops, Brownie Shots and several other sweet treats!</p>
-      <p>We are open 7 days a week, beginning Sunday at 11 am till 4 pm. Monday through Friday 8 am till 7 pm, and Saturday 10 am to 5 pm.</p>
-      <p>Stop in today for a treat or give us a call for an order!  We take special orders daily and provide delivery options. For pricing inquiries, <a href="#">please give us a call</a> </p>
+      <p class="p1">We offer cupcakes in three sizes: Jumbo Gourmet (filled), Regular &amp; Mini. Plus, we make Cakes, Cake Balls/Pops, Brownie Shots and several other sweet treats!</p>
+      <p class="p1">We are open 7 days a week, beginning Sunday at 11 am till 4 pm. Monday through Friday 8 am till 7 pm, and Saturday 10 am to 5 pm.</p>
+      <p class="p1">Stop in today for a treat or give us a call for an order!  We take special orders daily and provide delivery options. For pricing inquiries, <a href="#">please give us a call</a> </p>
       <p><a href="#" class="btn">contact us</a></p>
     </div>
     <section>
-      <div>
+      <div class="h1 fr">
         <h3>hours</h3>
         <!--make a section-->
-        <ul>
+        <ul id="cherry">
           <!-- Hours need fixed (see notes)-->
           <li>Monday &ndash; Friday</li>
           <li>
@@ -94,7 +95,6 @@ content 1
         </ul>
       </div>
     </section>
-    <!-- use time tags--> 
   </div>
 </section>
 <!--==========
@@ -102,71 +102,93 @@ content 1
 content 2
 
 ==========-->
-<section>
-  <div class="wrapper">
-    <header>
-      <h2>our treats</h2>
-      <!--make h2--> 
-    </header>
-    <!--Add subsection and header-->
-    <p>We have something for every craving, celebration and occasion. We also offer several allergen free options.</p>
-    <div class="row">
-      <div>
-        <h4>signature cupcakes</h4>
-        <p> Caramels marshmallow jelly-o cotton candy ice cream I love cotton candy chocolate bar fruitcake.</p>
-        <p><a href="#" class="btn">order now</a></p>
+<div class="lghtblu">
+  <div class="wrapper" id="treats">
+    <section>
+      <header>
+        <h2>our treats</h2>
+        <!--make h2--> 
+      </header>
+      <!--Add subsection and header-->
+      <p>We have something for every craving, celebration and occasion. We also offer several allergen free options.</p>
+      <div class="row">
+        <section class="fl treats">
+         <img src="img/Cupcake-3.png" alt="pink cupcake">
+          <header><h4>signature cupcakes</h4></header>
+          <p> Caramels marshmallow jelly-o cotton candy ice cream I love cotton candy chocolate bar fruitcake.</p>
+          <p><a href="#" class="btn">order now</a></p>
+        </section>
+        <section class="fl treats" id="mar1">
+         <img src="img/Cupcake-4.png" alt="chocolate cupcake">
+          <header><h4>allergen free</h4></header>
+          <p>Topping pudding candy canes dragée. Lemon drops chupa chups gingerbread. Jelly topping apple pie cake pie icing chocolate bar fruitcake oat cake. </p>
+          <p><a href="#" class="btn">order now</a></p>
+        </section>
+        <section class="fr treats">
+         <img src="img/Cupcake-5.png" alt="blue polkadot cupcake">
+          <header><h4>vegan</h4></header>
+          <p>Pastry halvah gummi bears chupa chups I love. Macaroon pastry chocolate cake oat cake I love soufflé chocolate.</p>
+          <p><a href="#" class="btn">order now</a></p>
+        </section>
       </div>
-      <div>
-        <h4>allergen free</h4>
-        <p>Topping pudding candy canes dragée. Lemon drops chupa chups gingerbread. Jelly topping apple pie cake pie icing chocolate bar fruitcake oat cake. </p>
-        <p><a href="#" class="btn">order now</a></p>
-      </div>
-      <div>
-        <h4>vegan</h4>
-        <p>Pastry halvah gummi bears chupa chups I love. Macaroon pastry chocolate cake oat cake I love soufflé chocolate.</p>
-        <p><a href="#" class="btn">order now</a></p>
-      </div>
-    </div>
+    </section>
   </div>
-</section>
+</div>
+
 <!--==========
 
 content 3
 
 ==========-->
 <section>
-  <div class="wrapper">
+  <div class="wrapper" id="daily">
     <header>
       <h2>daily flavors</h2>
       <!--make a section, make h2--> 
     </header>
     <div class="row">
-      <h3>Wedding Cake</h3>
-      <!--h3-->
-      <p>White Cake frosted with white buttercream and topped with wedding day sprinkles and a rose ornament.</p>
-      <h3>The Tuxed</h3>
-      <!--h3-->
-      <p>Chocolate Cake frosted with White buttercream, sprinkled with sprinkles.</p>
-      <h3>Prince/Princess</h3>
-      <!--h3-->
-      <p>Almond flavored White Cake frosted with a pastel pink and pastel blue swirl vanilla buttercream, topped with colorful confetti sprinkles.</p>
-      <h3>Go Big Red Velver</h3>
-      <!--h3-->
-      <p>Always friendly for Husker game day!! Red Velvet cake frosted with traditional cream cheese frosting and topped with red sprinkles.</p>
+      <div class="flavors fl">
+        <h3>Wedding Cake</h3>
+        <!--h3-->
+        <p>White Cake frosted with white buttercream and topped with wedding day sprinkles and a rose ornament.</p>
+      </div>
+      <div class="flavors fl ">
+        <h3>The Tuxed</h3>
+        <!--h3-->
+        <p>Chocolate Cake frosted with White buttercream, sprinkled with sprinkles.</p>
+      </div>
+      <div class="flavors fl">
+        <h3>Prince/Princess</h3>
+        <!--h3-->
+        <p>Almond flavored White Cake frosted with a pastel pink and pastel blue swirl vanilla buttercream, topped with colorful confetti sprinkles.</p>
+      </div>
+      <div class="flavors fr">
+        <h3>Go Big Red Velver</h3>
+        <!--h3-->
+        <p>Always friendly for Husker game day!! Red Velvet cake frosted with traditional cream cheese frosting and topped with red sprinkles.</p>
+      </div>
     </div>
     <div class="row">
-      <h3>Peanut Butter Cup</h3>
-      <!--h3-->
-      <p>Chocolate Cake frosted with peanut butter buttercream and topped with peanut butter cup crumbles.</p>
-      <h3>Cookies and Cream</h3>
-      <!--h3-->
-      <p>Chocolate Cake frosted with chocolate cookie crumb buttercream and topped with crumbed oreo crumbs.</p>
-      <h3>Signature</h3>
-      <!--h3-->
-      <p>Chocolate Cake frosted with our favorite Cupcakes &amp; more colors, chocolate and hot pink swirled buttercream.</p>
-      <h3>Chocolate Lovers</h3>
-      <!--h3-->
-      <p>Chocolate Cake dipped in chocolate ganache, sprinkled with mini chocolate chips and topped with a dollop of chocolate buttercream.</p>
+      <div class="flavors fl">
+        <h3>Peanut Butter Cup</h3>
+        <!--h3-->
+        <p>Chocolate Cake frosted with peanut butter buttercream and topped with peanut butter cup crumbles.</p>
+      </div>
+      <div class="flavors fl">
+        <h3>Cookies and Cream</h3>
+        <!--h3-->
+        <p>Chocolate Cake frosted with chocolate cookie crumb buttercream and topped with crumbed oreo crumbs.</p>
+      </div>
+      <div class="flavors fl">
+        <h3>Signature</h3>
+        <!--h3-->
+        <p>Chocolate Cake frosted with our favorite Cupcakes &amp; more colors, chocolate and hot pink swirled buttercream.</p>
+      </div>
+      <div class="flavors fr">
+        <h3>Chocolate Lovers</h3>
+        <!--h3-->
+        <p>Chocolate Cake dipped in chocolate ganache, sprinkled with mini chocolate chips and topped with a dollop of chocolate buttercream.</p>
+      </div>
     </div>
   </div>
 </section>
@@ -175,138 +197,144 @@ content 3
 content 3
 
 ==========-->
-<div class="wrapper">
-  <section>
-    <div>
-      <header>
-        <h3>place order</h3>
-        <!--make a section--> 
-      </header>
-      <p>Time limits for orders are 48 hours; please wait for a confirmation email to verify your order.</p>
+<div class="lghtblu">
+  <div class="wrapper">
+    <section>
+      <div class="wrapper">
+        <header>
+          <h3>place order</h3>
+          <!--make a section--> 
+        </header>
+        <p>Time limits for orders are 48 hours; please wait for a confirmation email to verify your order.</p>
+      </div>
+    </section>
+    <div class="form">
+      <table>
+        <!--add caption, utilize colspan instead of empty td and th elements-->
+        <caption>
+        </caption>
+        <colgroup>
+        <col>
+        <col>
+        <col>
+        <col>
+        </colgroup>
+        <thead>
+          <tr>
+            <th></th>
+            <th>Prices</th>
+            <th> </th>
+            <th> </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td></td>
+            <td>Individual</td>
+            <td>One Dozen</td>
+            <td>Two Dozen</td>
+          </tr>
+          <tr>
+            <td>Mini</td>
+            <td>$1.25</td>
+            <td>$13.00</td>
+            <td>$2.00 More</td>
+          </tr>
+          <tr>
+            <td>Regular</td>
+            <td>$2.50</td>
+            <td>$27.50</td>
+            <td></td>
+          </tr>
+        <tr>
+          <td>Jumbo</td>
+          <td>$3.50</td>
+          <td>$38.50</td>
+          <td></td>
+        </tr>
+        </tbody>
+      </table>
     </div>
-  </section>
-  <div>
-    <table>
-      <!--add caption, utilize colspan instead of empty td and th elements-->
-      <caption>
-      </caption>
-      <colgroup>
-      <col>
-      <col>
-      <col>
-      <col>
-      </colgroup>
-      <thead>
-        <tr>
-          <th>Prices</th>
-          <th> </th>
-          <th> </th>
-          <th> </th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td></td>
-          <td>Individual</td>
-          <td>One Dozen</td>
-          <td>Two Dozen</td>
-        </tr>
-        <tr>
-          <td>Mini</td>
-          <td>$1.25</td>
-          <td>$13.00</td>
-          <td>$2.00 More</td>
-        </tr>
-        <tr>
-          <td>Regular</td>
-          <td>$2.50</td>
-          <td>$27.50</td>
-          <td></td>
-        </tr>
-      </tbody>
-      <tr>
-        <td>Jumbo</td>
-        <td>$3.50</td>
-        <td>$38.50</td>
-        <td></td>
-      </tr>
-    </table>
-  </div>
-  <div>
-    <form>
-      <div>
-        <label>first name</label>
-        <input type="text" name="firstname" id="firstname">
-        <label>last name</label>
-        <input type="text" name="lastname" id="lastname">
-        <label>phone number</label>
-        <input type="tel" name="phonenumber" id="phonenumber">
-        <label>email address</label>
-        <input type="email" name="email" id="email">
-        <label>special requests</label>
-        <textarea maxlength="140" id="requests"></textarea>
-      </div>
-      <div>
-        <fieldset>
-          <legend>occacion</legend>
-          <select name="occasion">
-            <option>Wedding</option>
-            <option>Birthday</option>
-            <option>Other</option>
-          </select>
-        </fieldset>
-      </div>
-      <div>
-        <fieldset>
-          <legend>quantity</legend>
-          <label>individual</label>
-          <input type="radio" name="quantity" value="individual">
-          <label>one dozen</label>
-          <input type="radio" name="quantity" value="onedozen">
-          <label>two dozen</label>
-          <input type="radio" name="quantity" value="twodozen">
-        </fieldset>
-      </div>
-      <fieldset>
-        <legend>flavor</legend>
-        <div class="row">
-          <div>
-            <label>wedding cake</label>
-            <input type="checkbox" name="flavor" value="weddingcake">
-            <label>go big red</label>
-            <input type="checkbox" name="flavor" value="gobigred">
-            <label>signature</label>
-            <input type="checkbox" name="flavor" value="signature">
-          </div>
-          <div>
-            <label>the tuxed</label>
-            <input type="checkbox" name="flavor" value="tuxedo">
-            <label>pb clip</label>
-            <input type="checkbox" name="flavor" value="pbclip">
-            <label>chocolate lovers</label>
-            <input type="checkbox" name="flavors" value="chocolatelovers">
-          </div>
-          <div>
-            <label>princess/prince</label>
-            <input type="checkbox" name="flavor" value="princess">
-            <label>cookies &amp; cream</label>
-            <input type="checkbox" name="flavor" value="cookiesncream">
-          </div>
+    <div class="form">
+      <form>
+       <div class="fl row form">
+       	 <div>
+          <label>first name</label>
+          <input type="text" name="firstname" id="firstname">
+          <label>last name</label>
+          <input type="text" name="lastname" id="lastname">
+          <label>phone number</label>
+          <input type="tel" name="phonenumber" id="phonenumber">
+          <label>email address</label>
+          <input type="email" name="email" id="email">
+          <label>special requests</label>
+          <textarea maxlength="140" id="requests"></textarea>
         </div>
+       </div>
+        <div class="fr row form">
         <div>
           <fieldset>
-            <legend>type</legend>
-            <label>signature</label>
-            <input type="radio" name="type" value="signature">
-            <label>allergen free</label>
-            <input type="radio" name="type" value="allergyfree">
-            <label>vegan</label>
-            <input type="radio" name="type" value="vegan">
-            <p><a href="#" class="btn">pay on paypal</a></p>
+            <legend>occacion</legend>
+            <select name="occasion">
+              <option>Wedding</option>
+              <option>Birthday</option>
+              <option>Other</option>
+            </select>
           </fieldset>
         </div>
-      </fieldset>
-    </form>
+        	<div>
+          <fieldset>
+            <legend>quantity</legend>
+            <label>individual</label>
+            <input type="radio" name="quantity" value="individual">
+            <label>one dozen</label>
+            <input type="radio" name="quantity" value="onedozen">
+            <label>two dozen</label>
+            <input type="radio" name="quantity" value="twodozen">
+          </fieldset>
+        </div>
+        <fieldset>
+          <legend>flavor</legend>
+          <div class="row">
+            <div>
+              <label>wedding cake</label>
+              <input type="checkbox" name="flavor" value="weddingcake">
+              <label>go big red</label>
+              <input type="checkbox" name="flavor" value="gobigred">
+              <label>signature</label>
+              <input type="checkbox" name="flavor" value="signature">
+            </div>
+            <div>
+              <label>the tuxed</label>
+              <input type="checkbox" name="flavor" value="tuxedo">
+              <label>pb clip</label>
+              <input type="checkbox" name="flavor" value="pbclip">
+              <label>chocolate lovers</label>
+              <input type="checkbox" name="flavors" value="chocolatelovers">
+            </div>
+            <div>
+              <label>princess/prince</label>
+              <input type="checkbox" name="flavor" value="princess">
+              <label>cookies &amp; cream</label>
+              <input type="checkbox" name="flavor" value="cookiesncream">
+            </div>
+          </div>
+          <div>
+            <fieldset>
+              <legend>type</legend>
+              <label>signature</label>
+              <input type="radio" name="type" value="signature">
+              <label>allergen free</label>
+              <input type="radio" name="type" value="allergyfree">
+              <label>vegan</label>
+              <input type="radio" name="type" value="vegan">
+              <p><a href="#" class="btn">pay on paypal</a></p>
+            </fieldset>
+          </div>
+          </fieldset>
+        </div>
+      </form>
+    </div>
   </div>
 </div>
 <!----> 
@@ -316,17 +344,17 @@ Footer
 
 ==========-->
 <footer>
-  <div class="wrapper">
-    <div>
+  <div class="wrapper row">
+    <div class="fl foot">
       <h6>Real Fake Authentic</h6>
       <p>specialty bakery dedicated to creating and baking several different sweet treats. </p>
     </div>
-    <div>
+    <div class="fl foot">
       <h6>Our Location </h6>
       <p>123 Fake Street #101</p>
       <p>Fakersville, FA 12345</p>
     </div>
-    <div>
+    <div class="fr">
       <h6>Connect</h6>
       <ul>
         <li><a href="http://www.facebook.com" target="_blank"></a><span>Facebook</span></li>
