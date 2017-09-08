@@ -9,6 +9,7 @@
 	box-sizing: border-box;
 	border: none;
 	font: 14px/26px 'Quicksand', sans-serif;
+	text-decoration: none;
 }
 
 /*--=========
@@ -23,50 +24,78 @@ Site structure
 	float: right;
 }
 .wrapper {
-	width: 1230px;
+	width: 1170px;
 	margin: 0 auto;
-	padding: 75px;
 }
 .p1 {
-	width: 570px
+	width: 570px;
+	padding-left: 50px;
 }
 .h1 {
-	width: 235px;
+	width: 335px;
 }
 #specialty {
-	padding: 100px;
-	height: 560px;
+	height: 660px;
+	margin-bottom: 90px;
 }
-#daily {
-	padding: 100px;
+#daily { 
 	height: 740px;
 }
 .treats {
-	width: 225px; 
-}
-#treats div:nth-child(2){
-	padding-left: 0px; /* breaks the "allergen free" one and wont scoot beyond a certain point?*/
+	width: 305px; 
 }
 .flavors {
 	width: 230px;
-	margin-left: 25px;
+	margin-left: 50px;
 }
-#nav {width: 650px}
+#nav {
+	margin: 0 auto;
+	width: 650px;
+}
+#contact {
+	height: 1364px;
+}
+#treats {
+	height: 840px;
+	padding: 30px;
+}
+
 /*--=========
 
 type
 
 =========--*/
-#treats, #daily {
+h1, h2, h3, h4, h5, h6, nav {
+	text-transform: uppercase;
 	text-align: center;
 }
 h2 {
+	background-color: rgba(225, 206, 124, .5);
+	width: 620px;
+	height: 95px;
+	-moz-border-radius: 33px;
+	-o-border-radius: 33px;
+	-ms-border-radius: 33px;
+	-webkit-border-radius: 33px;
+	border-radius: 33px;
+}
+#treats, #daily {
+	text-align: center;
+}
+h2, h3 {
 	font: 600 34px/46px 'Quicksand', sansserif;
 	color: #E05067;
+	padding-top: 50px;
 }
-h3 {
+h4 {
 	font-weight: 600;
 	color: #E05067;
+}
+h6 {
+	font-weight: 600;
+}
+p, label, ul li {
+	color: #702F1D;
 }
 /*--=========
 
@@ -81,7 +110,11 @@ nav ul li{
 }
 .foot {
 	width: 200px; 
-	margin-left: 50px;
+	margin-left: 40px;
+}
+#plcorderinfo {
+	text-align: center;
+	margin: 20px 0px 90px 0px;
 }
 /*--=========
 
@@ -101,6 +134,7 @@ button
 .btn:hover {
 	background-color: #379983;
 }
+
 /*--=========
 
 nav
@@ -119,33 +153,43 @@ ul a {
 	width: 25px;
 	height: 25px;
 }
-h1 {
+header ul li:nth-child(2), header ul li:nth-child(4), header ul li:nth-child(3), header ul li:last-child {
 	margin-left: 80px;
-	margin-top: -10px;
 }
-ul li {
-	margin-left: 10px;
+nav li a{
+	color: #E05067;
+	margin-top: 20px
 }
-ul li:first-child a, ul li:last-child a {
+nav li a:hover {
+	color: #59B7A2;
+}
+footer ul li:first-child a, ul li:last-child a {
 	background: url(../img/icon-fb.png)no-repeat 0 0;
 }
-ul li:nth-child(2) a, ul li:last-child a {
+footer ul li:nth-child(2) a, ul li:last-child a {
 	background: url(../img/icon-tumblr.png)0 0;
 }
-ul li:nth-child(3) a, ul li:last-child a {
+footer ul li:nth-child(3) a, ul li:last-child a {
 	background: url(../img/icon-pinterest.png)0 0;
 }
-ul li:nth-child(4) a, ul li:last-child a {
+footer ul li:nth-child(4) a, ul li:last-child a {
 	background: url(../img/icon-linkedin.png)0;
 }
-ul li:last-child a, ul li:last-child a {
+footer ul li:last-child a, ul li:last-child a {
 	background: url(../img/icon-blog.png)no-repeat 0 0;
 }
-ul li a:hover {
+footer ul li a:hover {
 	background-position: 0 -25px;
 }
 #mar1 {
-	margin-left: 200px;
+	margin-left: 100px;
+}
+#footer {
+	height: 350px;
+	background-color: #379983;
+}
+footer p, #footer {
+	color: #fff;
 }
 /*--=========
 
@@ -153,7 +197,7 @@ images
 
 =========--*/
 #hero {
-	background: url(../img/img-hero.gif) no-repeat;
+	background: url(../img/img-hero.gif) no-repeat center;
 	height: 507px;
 }
 
@@ -164,6 +208,7 @@ images
 	margin-right: 20px;
 	margin-top: 100px;
 }
+
 /*--=========
 
 Table
@@ -179,7 +224,7 @@ tbody td, tfoot td {
 	padding: 20px 60px;
 }
 table {
-	margin: 0px 0px 60px 250px;
+	margin: 0 auto;
 	text-align: center;
 }
 th {
@@ -190,21 +235,8 @@ table {
 	color: #fff;
 	font-weight: 600;
 }
-form {
-	margin: 0 auto;
-	display: block;
-	width: 970px;
-}
-.form {
-	width: 470px;
-}
-form {
-	margin: 0 auto;
-	display: block;
-}
 fieldset, label {
 	font: 20px;
-	color: #702F1D;
 	text-transform: uppercase;
 }
 #firstname, #lastname, #phonenumber, #email, textarea {
@@ -224,6 +256,12 @@ fieldset, label {
 textarea {
 	height: 180px;
 	width: 470px;
+}
+fieldset {
+	margin-top: 25px;
+}
+form {
+	margin-top: 150px;
 }
 /*--=========
 
