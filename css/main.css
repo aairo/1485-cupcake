@@ -11,58 +11,36 @@
 	font: 14px/26px 'Quicksand', sans-serif;
 	text-decoration: none;
 }
+/*--------------------------------------------------------------
 
+>>> TABLE OF CONTENTS:
+
+----------------------------------------------------------------
+
+1.0 - Typography
+	Headings
+	Body Copy
+	Buttons
+	Tables
+	Forms
+
+2.0 - Navigation Menus
+
+3.0 - Site Structure
+
+4.0 - Media
+--------------------------------------------------------------*/
+
+
+
+/*--------------------------------------------------------------
+
+1.0 - Typography
+
+-------------------------------------------------------------- */
 /*--=========
 
-Site structure
-
-=========--*/
-.fl {
-	float:left;
-}
-.fr {
-	float: right;
-}
-.wrapper {
-	width: 1170px;
-	margin: 0 auto;
-}
-.p1 {
-	width: 570px;
-	padding-left: 50px;
-}
-.h1 {
-	width: 335px;
-}
-#specialty {
-	height: 660px;
-	margin-bottom: 90px;
-}
-#daily { 
-	height: 740px;
-}
-.treats {
-	width: 305px; 
-}
-.flavors {
-	width: 230px;
-	margin-left: 50px;
-}
-#nav {
-	margin: 0 auto;
-	width: 650px;
-}
-#contact {
-	height: 1364px;
-}
-#treats {
-	height: 840px;
-	padding: 30px;
-}
-
-/*--=========
-
-type
+Headings
 
 =========--*/
 h1, h2, h3, h4, h5, h6, nav {
@@ -79,9 +57,6 @@ h2 {
 	-webkit-border-radius: 33px;
 	border-radius: 33px;
 }
-#treats, #daily {
-	text-align: center;
-}
 h2, h3 {
 	font: 600 34px/46px 'Quicksand', sansserif;
 	color: #E05067;
@@ -94,14 +69,100 @@ h4 {
 h6 {
 	font-weight: 600;
 }
+/*--=========
+
+Body
+
+=========--*/
 p, label, ul li {
 	color: #702F1D;
 }
+#treats, #daily {
+	text-align: center;
+}
 /*--=========
 
-Navigation
+Buttons
 
 =========--*/
+
+.btn {
+	padding: 10px 40px;
+	text-align: center;
+	background-color: #FFCE7C;
+	border-radius: 30px;
+	margin-top: 10px;
+	text-transform: uppercase;
+	color: #fff;
+	text-decoration: none;
+}
+.btn:hover {
+	background-color: #379983;
+}
+/*--=========
+
+Table
+
+=========--*/
+thead, tr:nth-child(2) {
+	background-color: #379983;
+}
+tr:last-child {
+	background-color: #379983;
+}
+tbody td, tfoot td {
+	padding: 20px 60px;
+}
+table {
+	margin: 0 auto;
+	text-align: center;
+}
+th {
+	padding: 20px 40px;
+}
+table {
+    border-collapse: collapse;
+	color: #fff;
+	font-weight: 600;
+}
+/*--=========
+
+Form
+
+=========--*/
+fieldset, label {
+	font: 20px;
+	text-transform: uppercase;
+}
+#firstname, #lastname, #phonenumber, #email, textarea {
+	display: block;
+	text-align: left;
+	height: 44px;
+	margin: 10px 0px 5px 0px;
+	background-color: #379983;
+	padding: 22px 40px;
+	-moz-border-radius: 20px;
+	-o-border-radius: 20px;
+	-ms-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
+	width: 470px;
+}
+textarea {
+	height: 180px;
+	width: 470px;
+}
+fieldset {
+	margin-top: 25px;
+}
+form {
+	margin-top: 150px;
+}
+/*--------------------------------------------------------------
+
+2.0 - Navigation
+
+-------------------------------------------------------------- */
 nav ul li{
 	display: inline-block;
 }
@@ -116,30 +177,6 @@ nav ul li{
 	text-align: center;
 	margin: 20px 0px 90px 0px;
 }
-/*--=========
-
-button
-
-=========--*/
-.btn {
-	padding: 10px 40px;
-	text-align: center;
-	background-color: #FFCE7C;
-	border-radius: 30px;
-	margin-top: 10px;
-	text-transform: uppercase;
-	color: #fff;
-	text-decoration: none;
-}
-.btn:hover {
-	background-color: #379983;
-}
-
-/*--=========
-
-nav
-
-=========--*/
 ul {
 	list-style: none;
 }
@@ -191,11 +228,61 @@ footer ul li a:hover {
 footer p, #footer {
 	color: #fff;
 }
-/*--=========
+/*--------------------------------------------------------------
 
-images
+3.0 - Site Structure
 
-=========--*/
+-------------------------------------------------------------- */
+.fl {
+	float:left;
+}
+.fr {
+	float: right;
+}
+.wrapper {
+	width: 1170px;
+	margin: 0 auto;
+}
+.p1 {
+	width: 570px;
+	padding-left: 50px;
+}
+.h1 {
+	width: 335px;
+}
+#specialty {
+	height: 660px;
+	margin-bottom: 90px;
+}
+#daily { 
+	height: 740px;
+}
+.treats {
+	width: 305px; 
+}
+.flavors {
+	width: 230px;
+	margin-left: 50px;
+}
+#nav {
+	margin: 0 auto;
+	width: 650px;
+}
+#contact {
+	height: 1364px;
+}
+#treats {
+	height: 840px;
+	padding: 30px;
+}
+.row {
+	overflow: auto;
+}
+/*--------------------------------------------------------------
+
+4.0 - Media
+
+-------------------------------------------------------------- */
 #hero {
 	background: url(../img/img-hero.gif) no-repeat center;
 	height: 507px;
@@ -207,68 +294,5 @@ images
 #c1 {
 	margin-right: 20px;
 	margin-top: 100px;
-}
-
-/*--=========
-
-Table
-
-=========--*/
-thead, tr:nth-child(2) {
-	background-color: #379983;
-}
-tr:last-child {
-	background-color: #379983;
-}
-tbody td, tfoot td {
-	padding: 20px 60px;
-}
-table {
-	margin: 0 auto;
-	text-align: center;
-}
-th {
-	padding: 20px 40px;
-}
-table {
-    border-collapse: collapse;
-	color: #fff;
-	font-weight: 600;
-}
-fieldset, label {
-	font: 20px;
-	text-transform: uppercase;
-}
-#firstname, #lastname, #phonenumber, #email, textarea {
-	display: block;
-	text-align: left;
-	height: 44px;
-	margin: 10px 0px 5px 0px;
-	background-color: #379983;
-	padding: 22px 40px;
-	-moz-border-radius: 20px;
-	-o-border-radius: 20px;
-	-ms-border-radius: 20px;
-	-webkit-border-radius: 20px;
-	border-radius: 20px;
-	width: 470px;
-}
-textarea {
-	height: 180px;
-	width: 470px;
-}
-fieldset {
-	margin-top: 25px;
-}
-form {
-	margin-top: 150px;
-}
-/*--=========
-
-structure
-
-=========--*/
-.row {
-	overflow: auto;
 }
 
